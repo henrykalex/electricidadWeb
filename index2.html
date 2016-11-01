@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculadora coulomb</title>
+        <script type = "text/JavaScript" src="js/coulomb.js"></script>
+    </head>
+
+    <body>
+        <div style="width:70%; margin:0 auto;">
+            <div style='width:50%; float:left;'>
+                <h1>Ley de Coulomb</h1>
+                <p>Introduce los valores para obtener la fuerza entre cargas</p>
+
+                <form>
+                    <br>
+                    <label for = "con">Constante (K):</label>
+                    <input type="text" name="cons" id = "con" placeholder="8987000000"  oninput = "calcula()" style =  "width: 100px;">N m^2/C^2
+                    <br><br>
+                    <label for = "q1">Carga1 (q1):</label>
+                    <input type="text" name="carga1" id = "q1" placeholder="10.0" oninput = "calcula()" style =  "width: 100px;">C
+                    <br><br>
+                    <label for = "q2">Carga2 (q2):</label>
+                    <input type="text" name="carga2" id = "q2" placeholder="30.0" oninput = "calcula()" style =  "width: 100px;">C
+                    <br><br>
+                    <label for = "dis">Distancia (r):</label>
+                    <input type="text" name="distancia" id = "dis" placeholder="100.0" oninput = "calcula()" style =  "width: 100px;">m
+                    <br><br>
+                    <label for = "fue">Fuerza (F):</label>
+                    <input type="text" name="fuerza" id = "fue" placeholder="100.0" style =  "width: 100px;">N
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calcula()">
+                    <input type="button" value="Borrar" onclick="borraVals()">
+                </form>
+            </div>
+            <div style='width:50%; float:right;'>
+                <h2>Recordemos</h2>
+                <p>La Ley de Coulomb dice que los cuerpos cargados eléctricamente se atraen o rechazan, esto es inversamente proporcional a la distancia que los separa y directamente proporcional al producto de las cargas.
+
+                    En donde K es una constante llamada constante de Coulomb y que tiene el valor de 8.987 x10^9 N m^2/C^2 q1 y q2 son el valor de las cargas y r la distancia entre ellas. <br><br>F= k q1 q2 / r^2 </p>
+            </div>
+        </div>
+    </body>
+
+</html>

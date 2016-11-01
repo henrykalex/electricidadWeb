@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculadora corriente</title>
+        <script type = "text/JavaScript" src="js/corriente.js"></script>
+    </head>
+
+    <body>
+        <div style="width:70%; margin:0 auto; height:350px;">
+            <div style="width:50%; float:left;">
+                <h1>Corriente</h1>
+                <p>Introduce los valores para obtener la corriente.</p>
+
+                <form>
+                    <br>
+                    <label for = "car">Carga (q):</label>
+                    <input type="text" name="carga" id = "car" placeholder="10.0" oninput = "calcula()" style =  "width: 200px;">C
+                    <br><br>
+                    <label for = "tie">Tiempo (t):</label>
+                    <input type="text" name="tiempo" id = "tie" placeholder="100.0" oninput = "calcula()" style =  "width: 200px;">s
+                    <br><br>
+                    <label for = "cor">Corriente (i):</label>
+                    <input type="text" name="corriente" id = "cor" placeholder="100.0" style =  "width: 200px;">A
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calcula()">
+                    <input type="button" value="Borrar" onclick="borraVals()">
+                </form>
+            </div>
+            <div style="width:50%; float:right;">
+                <h2>Recordemos</h2>
+                <p>La corriente esta dada por la diferencia de carga entre la diferencia del tiempo. <br><br>i= q/t</p>
+            </div>
+        </div>
+        <div style="width:70%; margin:0 auto;">
+            <div style="width:50%; float:left;">
+                <h1>Densidad de corriente</h1>
+
+                <form>
+                    <br>
+                    <label for = "cord">Corriente (i):</label>
+                    <input type="text" name="corriente" id = "cord" placeholder="100.0" oninput = "calculaD()" style =  "width: 200px;">A
+                    <br><br>
+                    <label for = "ar">Area (A):</label>
+                    <input type="text" name="potencial" id = "are" placeholder="100.0" oninput = "calculaD()" style =  "width: 200px;">m^2
+                    <br><br>
+                    <label for = "den">Densidad de corriente (J):</label>
+                    <input type="text" name="densidad" id = "den" placeholder="10.0" style =  "width: 200px;">Am^2
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calculaD()">
+                    <input type="button" value="Borrar" onclick="borraValsD()">
+                </form>
+            </div>
+            <div style="width:50%; float:right;">
+                <h2>Recordemos</h2>
+                <p>J= i/A<br><br>Vector densidad de corriente es la tasa de flujo de carga eléctrica por unidad de superficie, por unidad de tiempo y es normal que a través de un dado</p>
+            </div>
+        </div>
+    </body>
+
+</html>

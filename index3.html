@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculadora potencial e.</title>
+        <script type = "text/JavaScript" src="js/potenciale.js"></script>
+    </head>
+
+    <body>
+        <div style="width:70%; margin:0 auto;">
+            <div style="width:50%; float:left;">
+                <h1>Potencial eléctrico</h1>
+                <p>Introduce los valores para obtener el potencial electrico</p>
+
+                <form>
+                    <br>
+                    <label for = "con">Constante (K):</label>
+                    <input type="text" name="cons" id = "con" placeholder="8987000000"  oninput = "calcula()" style =  "width: 100px;">N m^2/C^2
+                    <br><br>
+                    <label for = "q">Carga (q):</label>
+                    <input type="text" name="carga" id = "q" placeholder="10.0" oninput = "calcula()" style =  "width: 100px;">C
+                    <br><br>
+                    <label for = "dis">Distancia (r):</label>
+                    <input type="text" name="distancia" id = "dis" placeholder="100.0" oninput = "calcula()" style =  "width: 100px;">m
+                    <br><br>
+                    <label for = "pot">Potencial (V):</label>
+                    <input type="text" name="potencial" id = "pot" placeholder="100.0" style =  "width: 100px;">V
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calcula()">
+                    <input type="button" value="Borrar" onclick="borraVals()">
+                </form>
+            </div>
+            <div style="width:50%; float:right;">
+                <h2>Recordemos</h2>
+                <p>El potencial eléctrico es la energía potencial eléctrica por unidad de carga. Se le conoce como tensión en general, representada por V y tiene unidad de voltios (julio / C).<br> Ecuación que permite calcular el potencial eléctrico creado por una carga Q en cualquier punto de un campo eléctrico, a una distancia “r” de ella es:<br><br>V= kq/r</p>
+            </div>
+        </div>
+    </body>
+
+</html>

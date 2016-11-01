@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculadora capacitancia</title>
+        <script type = "text/JavaScript" src="js/capacitancia.js"></script>
+    </head>
+
+    <body>
+        <div style="width:70%; margin:0 auto; height:350px;">
+            <div style="width:50%; float:left;">
+                <h1>Capacitancia</h1>
+                <p>Introduce los valores para obtener la capacitancia.</p>
+
+                <form>
+                    <br>
+                    <label for = "eps">Epsilon 0 (&straightepsilon;0):</label>
+                    <input type="text" name="epsilon" id = "eps" placeholder="0.00000000000885"  oninput = "calcula()" style =  "width: 200px;">C^2 /Nm^2
+                    <br><br>
+                    <label for = "are">Area (A):</label>
+                    <input type="text" name="area" id = "are" placeholder="10.0" oninput = "calcula()" style =  "width: 200px;">m^2
+                    <br><br>
+                    <label for = "dis">Distancia (d):</label>
+                    <input type="text" name="distancia" id = "dis" placeholder="100.0" oninput = "calcula()" style =  "width: 200px;">m
+                    <br><br>
+                    <label for = "cap">Capacitancia (C):</label>
+                    <input type="text" name="capacitancia" id = "cap" placeholder="100.0" style =  "width: 200px;">F
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calcula()">
+                    <input type="button" value="Borrar" onclick="borraVals()">
+                </form>
+            </div>
+            <div style="width:50%; float:right;">
+                <h2>Recordemos</h2>
+                <p>La capacitancia de un capacitor de placas paralelas es proporcional al área de sus placas e inversamente proporcional a la separación de estas, tal como se esperaba a partir del argumento conceptual.<br><br>C=  &straightepsilon;0A/d</p>
+            </div>
+        </div>
+        <div style="width:70%; margin:0 auto;">
+            <div style="width:50%; float:left;">
+                <h1>Capacitancia y potencial</h1>
+
+                <form>
+                    <br>
+                    <label for = "capp">Capacitancia (C):</label>
+                    <input type="text" name="capacitancia" id = "capp" placeholder="100.0" oninput = "calculaP()" style =  "width: 200px;">F
+                    <br><br>
+                    <label for = "pot">Potencial (V):</label>
+                    <input type="text" name="potencial" id = "pot" placeholder="100.0" oninput = "calculaP()" style =  "width: 200px;">V
+                    <br><br>
+                    <label for = "qp">Carga (q):</label>
+                    <input type="text" name="carga" id = "qp" placeholder="10.0" style =  "width: 200px;">C
+                    <br><br>
+                    <input type="button" value="Calcula!" onclick="calculaP()">
+                    <input type="button" value="Borrar" onclick="borraValsP()">
+                </form>
+            </div>
+            <div style="width:50%; float:right;">
+                <h2>Recordemos</h2>
+                <p>La carga y la diferencia de potencial en un capacitor se relacionan por: <br><br>q = CV <br><br> donde C es una constante de proporcionalidad llamada capacitancia. La unidad de medida de la capaci- tancia en el SI es el farad (abreviado F). </p>
+            </div>
+        </div>
+    </body>
+
+</html>
